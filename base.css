@@ -1,38 +1,193 @@
-html, body {
-    margin: 0;
-}
-body {
-    background-color: #f1f1f1;
-    display: flex;
-    justify-content: center;
-}
-
-.wrapper {
-    width: 1200px;
-    display: flex;
-    margin: 0 auto;
-    background-color: aquamarine;
-}
-.main {
-    display: flex;
-    flex-flow: column;
-    width: 85%;
-}
-.menu {
-    width: 15%;
-    background-color: aqua;
-    padding: 10px 20px 0px;
-}
-.header {
-    background-color: rgb(5, 108, 108);
-    min-height: 150px;
-}
-.content {
-    background-color: white;
-    min-height: 300px;
-    padding: 20px;
-}
-.footer {
-    background-color: rgb(99, 56, 240);
-    min-height: 150px;
-}
+    html,
+    body {
+        margin: 0;
+    }
+    
+    body {
+        background-color: #f1f1f1;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .wrapper {
+        width: 1200px;
+        display: flex;
+        margin: 0 auto;
+        background-color: #f1f1f1;
+    }
+    
+    .main {
+        display: flex;
+        flex-flow: column;
+        width: 85%;
+    }
+    
+    .menu {
+        width: 12%;
+        background-color: #f1f1f1;
+        padding: 95px 17px 0px;
+        border-right: 0.2rem solid black;
+    }
+    
+    .header {
+        min-height: 150px;
+    }
+    
+    .content {
+        background-color: white;
+        min-height: 300px;
+        padding: 20px;
+    }
+    
+    .footer {
+        background-color: rgb(0, 0, 0);
+        display: flex;
+    }
+    /*meu css utilizado no desafio*/
+    /*HEADER*/
+    
+    .header {
+        background-image: url("assets/img-banner/bannerclinicafavaro.jpg");
+        background-size: cover;
+        background-position: center;
+        min-height: 150px;
+        padding: 20px;
+        width: 100%;
+        border-bottom: 0.2rem solid #000000;
+    }
+    
+    .header h1 {
+        text-align: center;
+        font-weight: bold;
+        color: #000000;
+        font-family: sans-serif;
+        background-color: #f1f1f1ac;
+    }
+    /*MENU*/
+    
+    .menu a {
+        color: black;
+        text-decoration: none;
+        font-size: 0.8rem;
+    }
+    
+    .menu ul {
+        padding: 0;
+        list-style: none;
+    }
+    /*CONTEUDO PRINCIPAL E LISTA*/
+    
+    #content_text {
+        font-family: sans-serif;
+        text-align: left;
+        width: 50%;
+    }
+    
+    #content_ulist {
+        font-family: sans-serif;
+        text-align: center;
+        background-color: #fdfcfc;
+    }
+    
+    #content_ulist ul {
+        list-style: none;
+    }
+    
+    #content_ulist p {
+        text-decoration: 2px underline rgb(166, 166, 26);
+        font-size: 1rem;
+    }
+    
+    #content_figure {
+        border-radius: 50%;
+        border: 0.2rem solid black;
+        height: 350px;
+        width: 350px;
+        float: right;
+        display: flex;
+    }
+    
+    #content_figure,
+    .content {
+        display: flex;
+    }
+    /*FOOTER E NEWSLETTER*/
+    
+    #contact_footer,
+    #newsletter {
+        color: white;
+        font-size: 1rem;
+        display: flex;
+        width: 50%;
+    }
+    
+    #contact_footer {
+        margin-top: 1rem;
+    }
+    
+    #newsletter {
+        float: right;
+    }
+    /*NEWSLETTER DETALHES */
+    
+    input[type=email],
+    input[type=text],
+    input[type=submit] {
+        width: 100%;
+        padding: 5px;
+        margin: 5px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    
+    input[type=checkbox] {
+        margin-top: 4px;
+    }
+    
+    input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        border: none;
+    }
+    
+    input[type=submit]:hover {
+        opacity: 0.8;
+    }
+    
+    #h2_newsletter {
+        margin: 0;
+        padding: 0.6rem;
+        font-size: 1rem;
+    }
+    /*imagens header paginas */
+    
+    .header1 {
+        background-image: url("assets/img-banner/pexels-andrea-piacquadio-3779713.jpg");
+        background-size: cover;
+        background-position: center;
+        min-height: 150px;
+        padding: 20px;
+        width: 100%;
+        border-bottom: 0.2rem solid #000000;
+    }
+    
+    .header2 {
+        background-image: url("assets/img-banner/pexels-anna-shvets-3845806.jpg");
+        background-size: cover;
+        background-position: center;
+        min-height: 150px;
+        padding: 20px;
+        width: 100%;
+        border-bottom: 0.2rem solid #000000;
+    }
+    
+    .header3 {
+        background-image: url("assets/img-banner/pexels-pixabay-52527.jpg");
+        background-size: cover;
+        background-position: center;
+        min-height: 150px;
+        padding: 20px;
+        width: 100%;
+        border-bottom: 0.2rem solid #000000;
+    }
